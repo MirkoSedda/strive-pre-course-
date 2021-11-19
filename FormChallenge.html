@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Challenge</title>
+    <style>
+      * {
+        background-color: black;
+        margin: 1em 1.5em;
+        color: grey;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+      h1 {
+        color: grey;
+      }
+      input {
+        color: grey;
+      }
+      checkbox {
+        color: grey;
+      }
+      footer {
+        min-height: 50px;
+        margin: 4.2em;
+        color: whit;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Form Challenge</h1>
+    <form action="">
+      <label>
+        <input type="text" placeholder="Enter Name" />
+      </label>
+      <label>
+        <input type="text" placeholder="Enter Surname" />
+      </label>
+      <label>
+        <input type="email" placeholder="Enter Email" />
+      </label>
+      <label>
+        <input type="password" placeholder="Enter Password" />
+      </label>
+      <label>
+        <input type="date" placeholder="Enter your birthday" />
+      </label>
+      <label>
+        <input type="number" placeholder="Insert your phone number" />
+      </label>
+      <br />
+      <input type="checkbox" name="classic" value="classic" /> I like jazz<br />
+      <input type="checkbox" name="jazz" value="jazz" /> I like jazz<br />
+      <input type="checkbox" name="pop" value="pop" /> I like pop<br />
+      <p>Do you agree with our terms of service?</p>
+      <span>
+        <input type="radio" name="yes" value="yes" />Yes
+        <input type="radio" name="no" value="no" />No </span
+      ><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
