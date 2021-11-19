@@ -33,7 +33,7 @@
   </head>
   <body>
     <h1>Form Challenge</h1>
-    <form action="">
+    <form action="" onsubmit="alert('Registration sent!')">
       <label>
         <input type="text" placeholder="Enter Name" />
       </label>
@@ -53,6 +53,7 @@
         <input type="number" placeholder="Insert your phone number" />
       </label>
       <br />
+      <p>What type of music do you like?</p>
       <input type="checkbox" name="classic" value="classic" /> I like classic<br />
       <input type="checkbox" name="jazz" value="jazz" /> I like jazz<br />
       <input type="checkbox" name="pop" value="pop" /> I like pop<br />
@@ -61,7 +62,7 @@
         <input type="radio" name="yes" value="yes" />Yes
         <input type="radio" name="no" value="no" />No </span
       ><br />
-      <input type="submit" value="Submit" />
+      <button type="submit">Send registration</button>
     </form>
   </body>
 </html>
