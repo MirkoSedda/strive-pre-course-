@@ -4,56 +4,104 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Html Challenge</title>
     <style>
       * {
-        background-color: black;
-        margin: 1em 1.5em;
+        font: size 16px;
+        margin-top: 0.7em;
+      }
+      .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 2em;
+      }
+      img {
+        border-radius: 50%;
       }
       body {
+        margin-left: 7em;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-color: black;
+        background-image: linear-gradient(180deg, #923cb5 0%, #000000 74%);
+        height: 100%;
         display: flex;
         flex-direction: column;
       }
-      h1 {
+      h1,
+      h2 {
         color: white;
+        margin-left: 1em;
       }
+
+      h1 {
+        font-weight: 900;
+      }
+
       p {
+        margin-left: 1em;
         color: white;
       }
       li {
+        margin-left: 1em;
         color: white;
       }
       a {
+        margin-left: 1em;
+        color: lightblue;
+        text-decoration: none;
+        transition-timing-function: ease;
+      }
+      a:hover {
         color: steelblue;
-        margin-left: 3em;
+        font-size: 1.1em;
       }
       table {
-        margin: 2em;
+        width: 50em;
+        margin: 2.5em;
         color: white;
+      }
+      .fa {
+        margin-left: 2.3em;
+        color: white;
+        size: 2em;
       }
       footer {
         min-height: 50px;
-        margin: 4.2em;
+        text-align: center;
+        margin-top: 3em;
         color: white;
       }
     </style>
   </head>
   <body>
-    <h1>Mirko Sedda</h1>
-    <img
-    src="https://hext.to/wp-content/uploads/2018/12/shutterstock_1181290198-Converted-1920.jpg"
-    width= 60%" height="30%" alt="web dev image " />
-    <p>My interests are:</p>
+    <div class="container">
+      <img
+        src="https://scontent.fmxp6-1.fna.fbcdn.net/v/t39.30808-6/243124728_10220494828256894_7712838591659178660_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=5tU6g-sS5zcAX-jlsVF&_nc_ht=scontent.fmxp6-1.fna&oh=cbd81335c7a6fc1ae08c0075e3d23487&oe=61AA803C"
+        width="100px"
+        height="100px"
+        alt="Mirko Sedda image "
+      />
+      <h1>Mirko Sedda</h1>
+    </div>
+    <h2>My interests are:</h2>
     <ol>
       <li>Learning about programming</li>
       <li>Watching TV series</li>
       <li>cycling in the city</li>
     </ol>
-    <p>Contact me at:</p>
-    <address>
-      <a href="mailto:kunay69@hotmail.it">kunay69@hotmail.it</a><br />
-      <a href="tel:+393518293944">+393518293944</a>
-    </address>
+    <h2>Educational and professional experiences:</h2>
     <table>
       <tr>
         <td>Academic Experience</td>
@@ -64,6 +112,24 @@
         <td>Customer Service Advisor - 3YOE</td>
       </tr>
     </table>
+    <p>Contact me at:</p>
+    <address>
+      <div class="email">
+        <i class="fa fa-envelope"></i>
+        <a href="mailto:kunay69@hotmail.it">kunay69@hotmail.it</a>
+      </div>
+      <br />
+      <div class="phone">
+        <i class="fa fa-phone"></i>
+        <a href="tel:+393518293944">+393518293944</a>
+      </div>
+      <div class="linkedin">
+        <i class="fa fa-linkedin-square"></i>
+        <a href="https://www.linkedin.com/in/mirko-sedda-65a043189/"
+          >LinkedIn</a
+        >
+      </div>
+    </address>
     <footer>Made with ❤️ in Italy</footer>
   </body>
 </html>
